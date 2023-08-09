@@ -1,13 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+:root{
+  --theme: #20062e;
+  --blue: #18b2de;
+  --white:#fff;
+  --grey:#b8b4b4;
+  --purple-grey: #8f8297;
+
+}
+
+ 
+
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+  font-family:"Inter",
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: var(--theme);
+  color: var(--white);
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+input {
+ font-family:"Inter",
+    sans-serif;
+
+}
+a{
+  text-decoration: none;
+}
+.input-wrapper{
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+width: 80vw;
+margin: 0 auto;
+ 
+
+}
+.input-wrapper h1{
+  font-size: 2rem;
+  font-weight: 400;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.podcasts-flex{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+  margin-top: 1.5rem;
+  gap:1.5rem;
+}
+
+.banner-wrapper{
+  background: linear-gradient(
+    177.7deg,
+    rgba(58,129,191,.3) 1.63%,
+    rgba(65,48,90,.009) 148.18%
+    );
+border-radius: 1rem;
+padding: .5rem;
+height: 300px;
+width: 100%;
+}
+.banner-wrapper img{
+  object-fit: cover;
+  height: 300px !important;
+  width: 100%;
+  border-radius: 1rem;
+}
+.podcast-title-heading{
+ width: 100%;
+  text-align: left !important;
+}
+.podcast-desc{
+  color: var(--purple-grey);
+  text-align: left;
+  width: 100%;
 }

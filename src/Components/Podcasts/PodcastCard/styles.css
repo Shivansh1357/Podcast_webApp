@@ -1,0 +1,31 @@
+.podcast-card{
+    height: 250px;
+    min-height: 250px;
+    width: 250px;
+    background: linear-gradient(
+        177.7deg,
+        rgba(58,129,191,.3) 1.63%,
+        rgba(65,48,90,.009) 148.18%
+    );
+    
+    border-radius: 1rem;
+    padding: 0.5rem;
+    opacity: .7;
+    cursor: pointer;
+   
+}
+.display-image-podcast{
+        width: 100%;
+        height: 210px;
+        border-radius: 1rem;
+        object-fit: cover;
+}
+.podcast-card:hover{
+    opacity: 1;
+    transition: all .3s;
+}
+.title-podcast{
+    color: var(--grey);
+    
+    margin: .5rem ;
+  }
